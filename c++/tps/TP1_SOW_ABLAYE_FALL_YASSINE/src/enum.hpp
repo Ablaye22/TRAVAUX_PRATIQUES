@@ -32,11 +32,11 @@ public:
 std::ostream& operator<<(std::ostream& os, Distance const & d);
 
 // 4o) les operateurs de comparaison
-bool operator==(Distance const & lhs, Distance const & rhs);
-bool operator!=(Distance const & lhs, Distance const & rhs);
-bool operator<=(Distance const & lhs, Distance const & rhs);
-bool operator>=(Distance const & lhs, Distance const & rhs);
-bool operator< (Distance const & lhs, Distance const & rhs);
-bool operator> (Distance const & lhs, Distance const & rhs);
+bool operator==(Distance const & d1, Distance const & d2);
+bool operator!=(Distance const & d1, Distance const & d2);
+bool operator<=(Distance const & d1, Distance const & d2);
+bool operator>=(Distance const & d1, Distance const & d2);
+bool operator< (Distance const & d1, Distance const & d2);
+bool operator> (Distance const & d1, Distance const & d2);
 
 #endif

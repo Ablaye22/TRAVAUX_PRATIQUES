@@ -98,11 +98,11 @@ public:
 };
 
 // 5o) les comparaisons, sur Distance et pas sur les pointeurs
-bool operator==(Distance const & lhs, Distance const & rhs);
-bool operator!=(Distance const & lhs, Distance const & rhs);
-bool operator<=(Distance const & lhs, Distance const & rhs);
-bool operator>=(Distance const & lhs, Distance const & rhs);
-bool operator< (Distance const & lhs, Distance const & rhs);
-bool operator> (Distance const & lhs, Distance const & rhs);
+bool operator==(Distance const & d1, Distance const & d2);
+bool operator!=(Distance const & d1, Distance const & d2);
+bool operator<=(Distance const & d1, Distance const & d2);
+bool operator>=(Distance const & d1, Distance const & d2);
+bool operator< (Distance const & d1, Distance const & d2);
+bool operator> (Distance const & d1, Distance const & d2);
 
 #endif
