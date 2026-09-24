@@ -2,24 +2,16 @@
 
 
 /* ---- les facteurs donnes par l'enonce ---- */
-namespace {
-  double const M_TO_FEET    = 3.280839895;
-  double const M_TO_LEAGUES = 0.0002071237;
-  double const M_TO_NAUTIC  = 0.0005399568;
-  double const FT_TO_LEAGUES= 6.31313e-5;
-  double const FT_TO_NAUTIC = 0.0001645788;
-  double const LG_TO_NAUTIC = 2.606928726;
+double const M_TO_FEET    = 3.280839895;
+double const M_TO_LEAGUES = 0.0002071237;
+double const M_TO_NAUTIC  = 0.0005399568;
+double const FT_TO_LEAGUES= 6.31313e-5;
+double const FT_TO_NAUTIC = 0.0001645788;
+double const LG_TO_NAUTIC = 2.606928726;
 
   double const EPSILON = 1e-9;
 
-  // valeur en metres d'une Distance, sans fuite memoire
-  double meters_of(Distance const & d) {
-    Distance_core const * const p = d.get_content()->convert_to_meters();
-    double const v = p->get_value();
-    delete p;
-    return v;
-  }
-}
+
 
 /* ---- Constructeur de la classe Distance_core ---- */
 Distance_core::Distance_core(double const value) : _value(value) {
